@@ -128,15 +128,15 @@
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
   .container {
-    max-width: 760px;
+    max-width: 760px !important;
   }
 }
 
 @media screen and (max-width: 759px) {
   .container {
     max-width: 480px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -144,4 +144,29 @@
   content: '';
   display: table;
   clear: both;
+}
+
+.row {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 759px) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.row::after, .row::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+div {
+  min-height: 50px !important;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
