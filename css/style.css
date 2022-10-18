@@ -128,7 +128,7 @@
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
   .container {
-    max-width: 760px !important;
+    max-width: 760px;
   }
 }
 
@@ -163,10 +163,4 @@
   content: '';
   display: table;
   clear: both;
-}
-
-div {
-  min-height: 50px !important;
-  margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
